@@ -1,4 +1,40 @@
 {
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-rorder-staging-32522-authRole",
+      "UnauthRoleArn": "arn:aws:iam::711556954185:role/amplify-rorder-staging-32522-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::711556954185:role/amplify-rorder-staging-32522-authRole",
+      "Region": "ap-southeast-1",
+      "DeploymentBucketName": "amplify-rorder-staging-32522-deployment",
+      "UnauthRoleName": "amplify-rorder-staging-32522-unauthRole",
+      "StackName": "amplify-rorder-staging-32522",
+      "StackId": "arn:aws:cloudformation:ap-southeast-1:711556954185:stack/amplify-rorder-staging-32522/44e89ea0-0675-11ee-a23e-0ae08bc32062",
+      "AmplifyAppId": "d3m2ezkc3esfy3",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-rorder-staging-32522-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+    },
+    "categories": {
+      "auth": {
+        "rorder": {}
+      },
+      "api": {
+        "amplifyhomes": {},
+        "hirohigaAppUser": {}
+      },
+      "storage": {
+        "hirohigaappUser": {},
+        "dynamoc672494f": {},
+        "hirohigaAppUser": {}
+      },
+      "function": {
+        "hirohigaAppUser": {
+          "deploymentBucketName": "amplify-rorder-staging-32522-deployment",
+          "s3Key": "amplify-builds/hirohigaAppUser-757a414b466149584d35-build.zip"
+        },
+        "hirohigaAppUser01": {},
+        "rorderb7a87b05": {}
+      }
+    }
+  },
   "master": {
     "awscloudformation": {
       "AuthRoleName": "amplify-amplifyhomes-master-124532-authRole",

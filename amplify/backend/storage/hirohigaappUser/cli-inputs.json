@@ -1,0 +1,10 @@
+{
+  "resourceName": "hirohigaappUser",
+  "tableName": "hirohigaappUser",
+  "partitionKey": {
+    "fieldName": "id",
+    "fieldType": "string"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}

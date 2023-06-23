@@ -1,20 +1,26 @@
 {
   "api": {
-    "LambdaTest": {
-      "dependsOn": [
-        {
-          "attributes": [
-            "Name",
-            "Arn"
+    "amplifyhomes": {
+      "output": {
+        "authConfig": {
+          "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "AWS_IAM"
+            }
           ],
-          "category": "function",
-          "resourceName": "LambdaTest1"
+          "defaultAuthentication": {
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 30,
+              "description": "api key description"
+            },
+            "authenticationType": "API_KEY"
+          }
         }
-      ],
+      },
       "providerPlugin": "awscloudformation",
-      "service": "API Gateway"
+      "service": "AppSync"
     },
-    "sakumotoAppUser": {
+    "hirohiga1AppUser": {
       "dependsOn": [
         {
           "attributes": [
@@ -22,21 +28,7 @@
             "Arn"
           ],
           "category": "function",
-          "resourceName": "sakumotoAppUser"
-        }
-      ],
-      "providerPlugin": "awscloudformation",
-      "service": "API Gateway"
-    },
-    "todoApps": {
-      "dependsOn": [
-        {
-          "attributes": [
-            "Name",
-            "Arn"
-          ],
-          "category": "function",
-          "resourceName": "LambdaTest"
+          "resourceName": "rorderb7a87b05"
         }
       ],
       "providerPlugin": "awscloudformation",
@@ -44,7 +36,7 @@
     }
   },
   "auth": {
-    "amplifyhomes": {
+    "rorder": {
       "customAuth": false,
       "dependsOn": [],
       "frontendAuthConfig": {
@@ -72,125 +64,40 @@
       },
       "providerPlugin": "awscloudformation",
       "service": "Cognito"
-    },
-    "userPoolGroups": {
-      "dependsOn": [
-        {
-          "attributes": [
-            "UserPoolId",
-            "AppClientIDWeb",
-            "AppClientID",
-            "IdentityPoolId"
-          ],
-          "category": "auth",
-          "resourceName": "amplifyhomes"
-        }
-      ],
-      "providerPlugin": "awscloudformation",
-      "service": "Cognito-UserPool-Groups"
     }
   },
   "function": {
-    "LambdaTest": {
-      "build": true,
-      "dependsOn": [],
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda"
-    },
-    "LambdaTest1": {
-      "build": true,
-      "dependsOn": [],
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda"
-    },
-    "sakumotoAppUser": {
+    "hirohigaAppUser01": {
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
     },
-    "todoFunction": {
+    "rorderb7a87b05": {
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
     }
   },
   "parameters": {
-    "AMPLIFY_function_LambdaTest1_deploymentBucketName": {
+    "AMPLIFY_function_hirohigaAppUser_deploymentBucketName": {
       "usedBy": [
         {
           "category": "function",
-          "resourceName": "LambdaTest1"
+          "resourceName": "hirohigaAppUser"
         }
       ]
     },
-    "AMPLIFY_function_LambdaTest1_s3Key": {
+    "AMPLIFY_function_hirohigaAppUser_s3Key": {
       "usedBy": [
         {
           "category": "function",
-          "resourceName": "LambdaTest1"
-        }
-      ]
-    },
-    "AMPLIFY_function_LambdaTest_deploymentBucketName": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "LambdaTest"
-        }
-      ]
-    },
-    "AMPLIFY_function_LambdaTest_s3Key": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "LambdaTest"
-        }
-      ]
-    },
-    "AMPLIFY_function_sakumotoAppUser_deploymentBucketName": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "sakumotoAppUser"
-        }
-      ]
-    },
-    "AMPLIFY_function_sakumotoAppUser_s3Key": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "sakumotoAppUser"
-        }
-      ]
-    },
-    "AMPLIFY_function_todoFunction_deploymentBucketName": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "todoFunction"
-        }
-      ]
-    },
-    "AMPLIFY_function_todoFunction_s3Key": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "todoFunction"
+          "resourceName": "hirohigaAppUser"
         }
       ]
     }
   },
   "storage": {
-    "s3amplifyhomesstorage855d51b1": {
-      "dependsOn": [],
-      "providerPlugin": "awscloudformation",
-      "service": "S3"
-    },
-    "sakumotoApp": {
-      "providerPlugin": "awscloudformation",
-      "service": "DynamoDB"
-    },
-    "sakumotoAppUser": {
+    "hirohigaappUser": {
       "providerPlugin": "awscloudformation",
       "service": "DynamoDB"
     }
