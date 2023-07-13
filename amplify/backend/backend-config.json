@@ -79,6 +79,22 @@
     }
   },
   "parameters": {
+    "AMPLIFY_function_hirohigaAppUser01_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "hirohigaAppUser01"
+        }
+      ]
+    },
+    "AMPLIFY_function_hirohigaAppUser01_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "hirohigaAppUser01"
+        }
+      ]
+    },
     "AMPLIFY_function_hirohigaAppUser_deploymentBucketName": {
       "usedBy": [
         {
@@ -92,6 +108,22 @@
         {
           "category": "function",
           "resourceName": "hirohigaAppUser"
+        }
+      ]
+    },
+    "AMPLIFY_function_rorderb7a87b05_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "rorderb7a87b05"
+        }
+      ]
+    },
+    "AMPLIFY_function_rorderb7a87b05_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "rorderb7a87b05"
         }
       ]
     }

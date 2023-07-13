@@ -4,6 +4,7 @@
  * Any changes to this file will be overwritten when running amplify pull. *
  **************************************************************************/
 
+export { default as Group17 } from "./Group17";
 export { default as studioTheme } from "./studioTheme";
 export { default as HomeCreateForm } from "./HomeCreateForm";
 export { default as HomeUpdateForm } from "./HomeUpdateForm";
